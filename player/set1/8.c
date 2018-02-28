@@ -6,8 +6,7 @@ int main(void) {
 	scanf("%[^\n]s",a);
 	n=strlen(a);
 	for(i=0;i<n;i++)
-	{
-		
+	{	
 
 		if(i==0)
 		{
@@ -19,6 +18,13 @@ int main(void) {
 		a[i+1]=a[i+1]-32;
 		}
 	}
+	for(i=0;i<n;i++)
+	{
+		if(a[i]<='0'&&a[i]>=9)
+		f=1;}
+	if(f==1)
+		printf("error");
+	else
 	puts(a);
 	return 0;
 }
