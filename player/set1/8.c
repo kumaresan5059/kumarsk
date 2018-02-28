@@ -2,7 +2,7 @@
 #include<string.h>
 int main(void) {
 	char a[200];
-	int i,n;
+	int i,n,f;
 	scanf("%[^\n]s",a);
 	n=strlen(a);
 	for(i=0;i<n;i++)
